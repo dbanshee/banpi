@@ -1,0 +1,24 @@
+-- Basic Auth Config
+ssh-keygen
+cp /home/pi/.ssh/id_rsa.pub /tmp/id_rsa.pi.pub
+
+-- Config Git
+sudo adduser git
+su git
+cd
+mkdir .ssh && chmod 700 .ssh
+touch .ssh/authorized_keys && chmod 600 .ssh/authorized_keys
+cat /tmp/id_rsa.pi.pub >> ~/.ssh/authorized_keys
+
+-- Server
+sudo mkdir /usr/local/git-server
+sudo chown -R git /usr/local/git-server
+sudo -u git mkdir ban365.git
+cd ban365.git
+sudo -u git git init --bare
+
+-- Init Repository
+git clone https://github.com/dbanshee/banete/ banete-github
+git remote set-url origin ssh://git@localhost:/usr/local/git-server/ban365.git/
+git push
+git push --tags

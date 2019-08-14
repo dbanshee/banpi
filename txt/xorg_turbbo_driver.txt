@@ -1,0 +1,5 @@
+Raspbian package xserver-xorg-video-fbturbo
+
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+modprobe: FATAL: Module g2d_23 not found in directory /lib/modules/4.14.79-v7+
+

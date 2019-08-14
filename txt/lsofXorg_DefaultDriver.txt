@@ -1,0 +1,129 @@
+COMMAND  PID USER   FD      TYPE     DEVICE SIZE/OFF   NODE NAME
+Xorg    3042 root  cwd       DIR      179,2     4096   1221 /home/pi
+Xorg    3042 root  rtd       DIR      179,2     4096      2 /
+Xorg    3042 root  txt       REG      179,2  1973776 130640 /usr/lib/xorg/Xorg
+Xorg    3042 root  DEL       REG       0,16           47315 /dev/shm/.org.chromium.Chromium.YDWmAB
+Xorg    3042 root  DEL       REG       0,16           47314 /dev/shm/.org.chromium.Chromium.4FrjNG
+Xorg    3042 root  DEL       REG        0,5          622593 /SYSV00000000
+Xorg    3042 root  DEL       REG        0,5          557056 /SYSV00000000
+Xorg    3042 root  mem       REG      179,2    38560   1902 /lib/arm-linux-gnueabihf/libnss_files-2.24.so
+Xorg    3042 root  mem       REG      179,2    38588   1910 /lib/arm-linux-gnueabihf/libnss_nis-2.24.so
+Xorg    3042 root  mem       REG      179,2    71604   1899 /lib/arm-linux-gnueabihf/libnsl-2.24.so
+Xorg    3042 root  mem       REG      179,2    26456   1900 /lib/arm-linux-gnueabihf/libnss_compat-2.24.so
+Xorg    3042 root  mem       REG      179,2    14048   1945 /lib/arm-linux-gnueabihf/libuuid.so.1.3.0
+Xorg    3042 root  mem       REG      179,2   244616   1860 /lib/arm-linux-gnueabihf/libblkid.so.1.1.0
+Xorg    3042 root  mem       REG      179,2   269676   1893 /lib/arm-linux-gnueabihf/libmount.so.1.1.0
+Xorg    3042 root  mem       REG      179,2    75608   1927 /lib/arm-linux-gnueabihf/libresolv-2.24.so
+Xorg    3042 root  mem       REG      179,2    13820  10488 /usr/lib/arm-linux-gnueabihf/libgmodule-2.0.so.0.5000.3
+Xorg    3042 root  mem       REG      179,2  1386496  10487 /usr/lib/arm-linux-gnueabihf/libgio-2.0.so.0.5000.3
+Xorg    3042 root  mem       REG      179,2  1015004   1880 /lib/arm-linux-gnueabihf/libglib-2.0.so.0.5000.3
+Xorg    3042 root  mem       REG      179,2   302260  10491 /usr/lib/arm-linux-gnueabihf/libgobject-2.0.so.0.5000.3
+Xorg    3042 root  mem       REG      179,2    30576  36526 /usr/lib/arm-linux-gnueabihf/libgudev-1.0.so.0.2.0
+Xorg    3042 root  mem       REG      179,2    34788  36566 /usr/lib/arm-linux-gnueabihf/libwacom.so.2.5.0
+Xorg    3042 root  mem       REG      179,2    62888  36482 /usr/lib/arm-linux-gnueabihf/libevdev.so.2.1.18
+Xorg    3042 root  mem       REG      179,2    17756  35864 /usr/lib/arm-linux-gnueabihf/libmtdev.so.1.0.0
+Xorg    3042 root  mem       REG      179,2   162556  36582 /usr/lib/arm-linux-gnueabihf/libinput.so.10.11.5
+Xorg    3042 root  mem       REG      179,2    59780 130729 /usr/lib/xorg/modules/input/libinput_drv.so
+Xorg    3042 root  mem       REG      179,2   234908 900025 /usr/lib/arm-linux-gnueabihf/s2tc/libtxc_dxtn.so
+Xorg    3042 root  mem       REG      179,2   111976   1894 /lib/arm-linux-gnueabihf/libncurses.so.5.9
+Xorg    3042 root  mem       REG      179,2   124808   1938 /lib/arm-linux-gnueabihf/libtinfo.so.5.9
+Xorg    3042 root  mem       REG      179,2   162212  10469 /usr/lib/arm-linux-gnueabihf/libedit.so.2.0.55
+Xorg    3042 root  mem       REG      179,2    30404  10475 /usr/lib/arm-linux-gnueabihf/libffi.so.6.0.4
+Xorg    3042 root  mem       REG      179,2  1269620  10573 /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.22
+Xorg    3042 root  mem       REG      179,2 40073692  42992 /usr/lib/arm-linux-gnueabihf/libLLVM-3.9.so.1
+Xorg    3042 root  mem       REG      179,2    96008  10470 /usr/lib/arm-linux-gnueabihf/libelf-0.168.so
+Xorg    3042 root  mem       REG      179,2    30332  50096 /usr/lib/arm-linux-gnueabihf/libdrm_freedreno.so.1.0.0
+Xorg    3042 root  mem       REG      179,2    34384  36366 /usr/lib/arm-linux-gnueabihf/libdrm_amdgpu.so.1.0.0
+Xorg    3042 root  mem       REG      179,2    42488  36381 /usr/lib/arm-linux-gnueabihf/libdrm_radeon.so.1.0.1
+Xorg    3042 root  mem       REG      179,2    26192  36374 /usr/lib/arm-linux-gnueabihf/libdrm_nouveau.so.2.0.0
+Xorg    3042 root  mem       REG      179,2    50924  43001 /usr/lib/arm-linux-gnueabihf/libsensors.so.4.4.0
+Xorg    3042 root  mem       REG      179,2  9247008 131764 /usr/lib/arm-linux-gnueabihf/dri/swrast_dri.so
+Xorg    3042 root  mem       CHR       29,0            1107 /dev/fb0
+Xorg    3042 root  mem       REG      179,2   120960 130647 /usr/lib/xorg/modules/libfb.so
+Xorg    3042 root  mem       REG      179,2    17952 130648 /usr/lib/xorg/modules/libfbdevhw.so
+Xorg    3042 root  mem       REG      179,2    47456 135256 /usr/lib/xorg/modules/drivers/fbturbo_drv.so
+Xorg    3042 root  mem       REG      179,2    17876  36338 /usr/lib/arm-linux-gnueabihf/libXxf86vm.so.1.0.0
+Xorg    3042 root  mem       REG      179,2    13740  36412 /usr/lib/arm-linux-gnueabihf/libxcb-dri2.so.0.0.0
+Xorg    3042 root  mem       REG      179,2    79284  36501 /usr/lib/arm-linux-gnueabihf/libxcb-glx.so.0.0.0
+Xorg    3042 root  mem       REG      179,2   124792  10587 /usr/lib/arm-linux-gnueabihf/libxcb.so.1.1.0
+Xorg    3042 root  mem       REG      179,2  1125108  10422 /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0
+Xorg    3042 root  mem       REG      179,2     5412  36406 /usr/lib/arm-linux-gnueabihf/libX11-xcb.so.1.0.0
+Xorg    3042 root  mem       REG      179,2    17820  36507 /usr/lib/arm-linux-gnueabihf/libXfixes.so.3.1.0
+Xorg    3042 root  mem       REG      179,2     9608  36513 /usr/lib/arm-linux-gnueabihf/libXdamage.so.1.1.0
+Xorg    3042 root  mem       REG      179,2    59588  10425 /usr/lib/arm-linux-gnueabihf/libXext.so.6.4.0
+Xorg    3042 root  mem       REG      179,2   165428  36494 /usr/lib/arm-linux-gnueabihf/libglapi.so.0.0.0
+Xorg    3042 root  mem       REG      179,2    21968  36450 /usr/lib/arm-linux-gnueabihf/libxcb-sync.so.1.0.0
+Xorg    3042 root  mem       REG      179,2     9636  36424 /usr/lib/arm-linux-gnueabihf/libxcb-present.so.0.0.0
+Xorg    3042 root  mem       REG      179,2     9644  36418 /usr/lib/arm-linux-gnueabihf/libxcb-dri3.so.0.0.0
+Xorg    3042 root  mem       REG      179,2   136764   1875 /lib/arm-linux-gnueabihf/libexpat.so.1.6.2
+Xorg    3042 root  mem       REG      179,2   400092  36519 /usr/lib/arm-linux-gnueabihf/libGL.so.1.2.0
+Xorg    3042 root  mem       REG      179,2   192508 130645 /usr/lib/xorg/modules/extensions/libglx.so
+Xorg    3042 root  mem       REG      179,2   169316  10552 /usr/lib/arm-linux-gnueabihf/libpng16.so.16.28.0
+Xorg    3042 root  mem       REG      179,2    17988   1864 /lib/arm-linux-gnueabihf/libcap-ng.so.0.0.0
+Xorg    3042 root  mem       REG      179,2    67092  10525 /usr/lib/arm-linux-gnueabihf/liblz4.so.1.7.1
+Xorg    3042 root  mem       REG      179,2   132928   1889 /lib/arm-linux-gnueabihf/liblzma.so.5.2.2
+Xorg    3042 root  mem       REG      179,2   567844  10483 /usr/lib/arm-linux-gnueabihf/libfreetype.so.6.12.3
+Xorg    3042 root  mem       REG      179,2    24072  36488 /usr/lib/arm-linux-gnueabihf/libfontenc.so.1.0.0
+Xorg    3042 root  mem       REG      179,2    66116   1862 /lib/arm-linux-gnueabihf/libbz2.so.1.0.4
+Xorg    3042 root  mem       REG      179,2    91884   1947 /lib/arm-linux-gnueabihf/libz.so.1.2.8
+Xorg    3042 root  mem       REG      179,2    62956   1881 /lib/arm-linux-gnueabihf/libgpg-error.so.0.21.0
+Xorg    3042 root  mem       REG      179,2   427360   1917 /lib/arm-linux-gnueabihf/libpcre.so.3.13.3
+Xorg    3042 root  mem       REG      179,2   116372   1878 /lib/arm-linux-gnueabihf/libgcc_s.so.1
+Xorg    3042 root  mem       REG      179,2    26632   1928 /lib/arm-linux-gnueabihf/librt-2.24.so
+Xorg    3042 root  mem       REG      179,2  1234700   1863 /lib/arm-linux-gnueabihf/libc-2.24.so
+Xorg    3042 root  mem       REG      179,2   127300   1924 /lib/arm-linux-gnueabihf/libpthread-2.24.so
+Xorg    3042 root  mem       REG      179,2   100048   1861 /lib/arm-linux-gnueabihf/libbsd.so.0.8.3
+Xorg    3042 root  mem       REG      179,2   452152   1890 /lib/arm-linux-gnueabihf/libm-2.24.so
+Xorg    3042 root  mem       REG      179,2   111980   1859 /lib/arm-linux-gnueabihf/libaudit.so.1.0.0
+Xorg    3042 root  mem       REG      179,2    17852  10424 /usr/lib/arm-linux-gnueabihf/libXdmcp.so.6.0.0
+Xorg    3042 root  mem       REG      179,2     5396  36462 /usr/lib/arm-linux-gnueabihf/libxshmfence.so.1.0.0
+Xorg    3042 root  mem       REG      179,2   494508  24353 /lib/arm-linux-gnueabihf/libsystemd.so.0.17.0
+Xorg    3042 root  mem       REG      179,2     9684  10423 /usr/lib/arm-linux-gnueabihf/libXau.so.6.0.0
+Xorg    3042 root  mem       REG      179,2   150980  36632 /usr/lib/arm-linux-gnueabihf/libXfont2.so.2.0.0
+Xorg    3042 root  mem       REG      179,2   595408  36594 /usr/lib/arm-linux-gnueabihf/libpixman-1.so.0.34.0
+Xorg    3042 root  mem       REG      179,2    50860  10467 /usr/lib/arm-linux-gnueabihf/libdrm.so.2.4.0
+Xorg    3042 root  mem       REG      179,2    30228  36588 /usr/lib/arm-linux-gnueabihf/libpciaccess.so.0.11.1
+Xorg    3042 root  mem       REG      179,2     9800   1872 /lib/arm-linux-gnueabihf/libdl-2.24.so
+Xorg    3042 root  mem       REG      179,2   788916   1879 /lib/arm-linux-gnueabihf/libgcrypt.so.20.1.6
+Xorg    3042 root  mem       REG      179,2   137608   1930 /lib/arm-linux-gnueabihf/libselinux.so.1
+Xorg    3042 root  mem       REG      179,2   113308   5619 /lib/arm-linux-gnueabihf/libudev.so.1.6.5
+Xorg    3042 root  mem       REG      179,2   271856   1870 /lib/arm-linux-gnueabihf/libdbus-1.so.3.14.15
+Xorg    3042 root  mem       REG      179,2    21868  10431 /usr/lib/arm-linux-gnueabihf/libarmmem.so
+Xorg    3042 root  mem       REG      179,2   138576   1815 /lib/arm-linux-gnueabihf/ld-2.24.so
+Xorg    3042 root    0u      CHR        4,1      0t0   1041 /dev/tty1
+Xorg    3042 root    1u      CHR        4,1      0t0   1041 /dev/tty1
+Xorg    3042 root    2u      CHR        4,1      0t0   1041 /dev/tty1
+Xorg    3042 root    3u  a_inode       0,11        0   6408 [eventpoll]
+Xorg    3042 root    4w      REG      179,2    19681   1534 /var/log/Xorg.0.log
+Xorg    3042 root    5u     unix 0xa71e1b00      0t0  44229 @/tmp/.X11-unix/X0 type=STREAM
+Xorg    3042 root    6u     unix 0xa71e2100      0t0  44230 /tmp/.X11-unix/X0 type=STREAM
+Xorg    3042 root    7u     unix 0xb5bd4c00      0t0  45167 @/tmp/.X11-unix/X0 type=STREAM
+Xorg    3042 root    8u  netlink                 0t0  45161 KOBJECT_UEVENT
+Xorg    3042 root    9u     unix 0x8c9d0000      0t0  45162 type=STREAM
+Xorg    3042 root   10u      CHR        4,1      0t0   1041 /dev/tty1
+Xorg    3042 root   11u      CHR       29,0      0t0   1107 /dev/fb0
+Xorg    3042 root   12u      CHR       29,0      0t0   1107 /dev/fb0
+Xorg    3042 root   13r     FIFO       0,10      0t0  45164 pipe
+Xorg    3042 root   14w     FIFO       0,10      0t0  45164 pipe
+Xorg    3042 root   15r     FIFO       0,10      0t0  45165 pipe
+Xorg    3042 root   16w     FIFO       0,10      0t0  45165 pipe
+Xorg    3042 root   17u  a_inode       0,11        0   6408 [eventpoll]
+Xorg    3042 root   18u  a_inode       0,11        0   6408 [eventpoll]
+Xorg    3042 root   19u      CHR      13,67      0t0   1570 /dev/input/event3
+Xorg    3042 root   20u  a_inode       0,11        0   6408 [timerfd]
+Xorg    3042 root   21u     unix 0xa71e0000      0t0  45198 @/tmp/.X11-unix/X0 type=STREAM
+Xorg    3042 root   22u      CHR      13,68      0t0   1592 /dev/input/event4
+Xorg    3042 root   23u      CHR      13,64      0t0   1387 /dev/input/event0
+Xorg    3042 root   24u      CHR      13,65      0t0   1388 /dev/input/event1
+Xorg    3042 root   25u      CHR      13,66      0t0   1389 /dev/input/event2
+Xorg    3042 root   26u     unix 0xa71e1200      0t0  45214 @/tmp/.X11-unix/X0 type=STREAM
+Xorg    3042 root   27u     unix 0x815f4c00      0t0  45245 @/tmp/.X11-unix/X0 type=STREAM
+Xorg    3042 root   28u     unix 0x815f5800      0t0  45247 @/tmp/.X11-unix/X0 type=STREAM
+Xorg    3042 root   29u     unix 0xa71e0600      0t0  46175 @/tmp/.X11-unix/X0 type=STREAM
+Xorg    3042 root   30u     unix 0x815f7c00      0t0  46178 @/tmp/.X11-unix/X0 type=STREAM
+Xorg    3042 root   31u     unix 0x8c9d1500      0t0  46181 @/tmp/.X11-unix/X0 type=STREAM
+Xorg    3042 root   32u     unix 0x8c9d1e00      0t0  46183 @/tmp/.X11-unix/X0 type=STREAM
+Xorg    3042 root   33u     unix 0xa7310f00      0t0  42995 @/tmp/.X11-unix/X0 type=STREAM
+Xorg    3042 root   34u     unix 0xa7311b00      0t0  42997 @/tmp/.X11-unix/X0 type=STREAM
+Xorg    3042 root   35u     unix 0xa7310300      0t0  44621 @/tmp/.X11-unix/X0 type=STREAM
+Xorg    3042 root   36u     unix 0xb58dfc00      0t0  44625 @/tmp/.X11-unix/X0 type=STREAM

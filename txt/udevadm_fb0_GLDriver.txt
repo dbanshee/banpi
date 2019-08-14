@@ -1,0 +1,82 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/platform/soc/soc:gpu/graphics/fb0':
+    KERNEL=="fb0"
+    SUBSYSTEM=="graphics"
+    DRIVER==""
+    ATTR{bits_per_pixel}=="32"
+    ATTR{blank}==""
+    ATTR{console}==""
+    ATTR{cursor}==""
+    ATTR{mode}==""
+    ATTR{modes}=="U:1920x1080p-0"
+    ATTR{name}==""
+    ATTR{pan}=="0,0"
+    ATTR{rotate}=="0"
+    ATTR{state}=="0"
+    ATTR{stride}=="7680"
+    ATTR{virtual_size}=="1920,1080"
+
+  looking at parent device '/devices/platform/soc/soc:gpu':
+    KERNELS=="soc:gpu"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="vc4-drm"
+    ATTRS{driver_override}=="(null)"
+
+  looking at parent device '/devices/platform/soc':
+    KERNELS=="soc"
+    SUBSYSTEMS=="platform"
+    DRIVERS==""
+    ATTRS{driver_override}=="(null)"
+
+  looking at parent device '/devices/platform':
+    KERNELS=="platform"
+    SUBSYSTEMS==""
+    DRIVERS==""
+
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/platform/soc/soc:gpu/graphics/fb0':
+    KERNEL=="fb0"
+    SUBSYSTEM=="graphics"
+    DRIVER==""
+    ATTR{bits_per_pixel}=="32"
+    ATTR{blank}==""
+    ATTR{console}==""
+    ATTR{cursor}==""
+    ATTR{mode}==""
+    ATTR{modes}=="U:1920x1080p-0"
+    ATTR{name}==""
+    ATTR{pan}=="0,0"
+    ATTR{rotate}=="0"
+    ATTR{state}=="0"
+    ATTR{stride}=="7680"
+    ATTR{virtual_size}=="1920,1080"
+
+  looking at parent device '/devices/platform/soc/soc:gpu':
+    KERNELS=="soc:gpu"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="vc4-drm"
+    ATTRS{driver_override}=="(null)"
+
+  looking at parent device '/devices/platform/soc':
+    KERNELS=="soc"
+    SUBSYSTEMS=="platform"
+    DRIVERS==""
+    ATTRS{driver_override}=="(null)"
+
+  looking at parent device '/devices/platform':
+    KERNELS=="platform"
+    SUBSYSTEMS==""
+    DRIVERS==""
+

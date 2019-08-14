@@ -1,0 +1,11 @@
+
+1. Separate Launch X Server and Desktop
+
+Launch XServer
+xinit (with default xterm app)
+
+/usr/bin/startlxde-pi :0
+
+2. Launch XServer with Desktop as Application
+
+sudo xinit /usr/bin/startlxde-pi

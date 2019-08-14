@@ -1,0 +1,11 @@
+-- Run Virtual X
+Xvnc :0
+
+-- Run apps
+export DISPLAY=:0
+xterm
+
+
+-- Start Desktop
+/usr/bin/startlxde-pi :0
+

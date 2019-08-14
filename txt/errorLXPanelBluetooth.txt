@@ -1,0 +1,8 @@
+At : /home/pi/.cache/lxsession/LXDE-pi/run.log
+
+va: Name org.bluez owned on DBus
+GDBus.Error:org.freedesktop.DBus.Error.AccessDenied
+
+
+Solution:
+sudo usermod -a -G bluetooth pi
