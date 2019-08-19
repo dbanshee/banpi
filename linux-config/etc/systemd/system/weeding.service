@@ -1,0 +1,14 @@
+[Unit]
+Description=ClauNoelWeeding
+After=network.target
+
+[Service]
+ExecStart=/usr/local/banpiapps/bodaclaunoel/weeding.sh
+WorkingDirectory=/usr/local/banpiapps/bodaclaunoel
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
