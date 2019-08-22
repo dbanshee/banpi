@@ -22,7 +22,7 @@ config = Config(configFileName)
 
 backup_path = config.backup_path
 backup_fileName = config.backup_fileName + '.tgz'
-backup_fullFileName = '/tmp/' + backup_fileName
+backup_fullFileName = '/tmp-nolimit/' + backup_fileName
 backup_fullFileNameCompleted = backup_fullFileName + '.completed'
 
 # Functions
