@@ -1,9 +1,0 @@
-/var/log/gitbackupdrive.log {
-  create 640 pi pi
-  rotate 2
-  monthly
-  compress
-  missingok
-  notifempty
-}
- 

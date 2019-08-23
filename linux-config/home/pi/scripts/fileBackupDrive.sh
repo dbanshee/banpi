@@ -3,12 +3,12 @@
 #
 # Banpi Script for File Server Backup to GDrive
 #
-echo "PATH : $PATH"
-#which gdrive > /dev/null
-#if [ $? == 1 ] ; then
-#  echo "Command gdrive in path is required. Abort."
-#  exit -1
-#fi
+
+TMP_PATH=/tmp-nolimit
+BACKUP_PATH="$TMP_PATH/file-backup"
+CURRENT_BACKUP_PATH="${BACKUP_PATH}/current"
+LAST_BACKUP_PATH="${BACKUP_PATH}/last"
+GDRIVE_CMD=/usr/local/banpiapps/gdrive/gdrive
 
 nArgs=$#
 if [ $nArgs == 2 ] ; then
@@ -20,11 +20,18 @@ else
   exit -1
 fi
 
+function clean () {
+  echo " Deleting Temp Backup Path : ${BACKUP_PATH}"
+  rm -rf $BACKUP_PATH
+}
 
-TMP_PATH=/tmp-nolimit
-BACKUP_PATH="$TMP_PATH/file-backup"
-CURRENT_BACKUP_PATH="${BACKUP_PATH}/current"
-LAST_BACKUP_PATH="${BACKUP_PATH}/last"
+function abort () {
+  echo "Aborting File Backup Drive execution"
+  clean
+  exit
+}
+
+trap abort SIGTERM SIGKILL SIGINT
 
 echo "File Backup Drive - $(date)"
 echo "  File Path           : ${FILE_PATH}"
@@ -35,9 +42,10 @@ mkdir -p $CURRENT_BACKUP_PATH
 mkdir -p $LAST_BACKUP_PATH
 
 # GDrive
-gDriveGitFolderId=$(gdrive list --query "name = '$DRIVE_FOLDER'" --no-header | cut -d' ' -f1)
+gDriveGitFolderId=$(${GDRIVE_CMD} list --query "name = '$DRIVE_FOLDER'" --no-header | cut -d' ' -f1)
 if [ -z $gDriveGitFolderId ] ; then
   echo "  Grive Git Folder not exists."
+  clean
   exit -1
 else
   echo "  Grive Git Folder Id : $gDriveGitFolderId"
@@ -57,11 +65,11 @@ eval $tarCmd
 echo " Backup File Generated : ${backupPath}"
 
 # Check last backup
-lastBackupFileId=$(gdrive list --query "name = '${backupFileName}' and '${gDriveGitFolderId}' in parents" --no-header | cut -d' ' -f1)
+lastBackupFileId=$(${GDRIVE_CMD} list --query "name = '${backupFileName}' and '${gDriveGitFolderId}' in parents" --no-header | cut -d' ' -f1)
 if [ ! -z "${lastBackupFileId}" ] ; then
    echo " Found previous Backup on GDrive with Id : ${lastBackupFileId}"
-   downLastBackCmd="gdrive download --force --no-progress --path $LAST_BACKUP_PATH  $lastBackupFileId"
-   echo " Grive Download Prev Backup Cmd : $downLastBackCmd"
+   downLastBackCmd="${GDRIVE_CMD} download --force --no-progress --path $LAST_BACKUP_PATH  $lastBackupFileId"
+   echo " GDrive Download Prev Backup Cmd : $downLastBackCmd"
    eval $downLastBackCmd
 
    md5Backup="$(md5sum $backupPath | cut -d' ' -f1)"
@@ -72,7 +80,7 @@ if [ ! -z "${lastBackupFileId}" ] ; then
 
    if [ "$md5Backup" != "$md5LastBackup" ] ; then
      echo " Backup has changes. Updating."
-     updateBackupCmd="gdrive update --no-progress $lastBackupFileId $backupPath"
+     updateBackupCmd="${GDRIVE_CMD} update --no-progress $lastBackupFileId $backupPath"
      echo " Update Backup Cmd : $updateBackupCmd"
      eval $updateBackupCmd
    else
@@ -80,12 +88,9 @@ if [ ! -z "${lastBackupFileId}" ] ; then
    fi
 else 
   echo " Not exists previous Backup" 
-  uploadBackupCmd="gdrive upload --no-progress -p ${gDriveGitFolderId} $backupPath"
+  uploadBackupCmd="${GDRIVE_CMD} upload --no-progress -p ${gDriveGitFolderId} $backupPath"
   echo " Upload Backup Cmd : $uploadBackupCmd"
   eval $uploadBackupCmd
 fi   
 
-echo
-
-echo "Deleting Temp Backup Path : ${BACKUP_PATH}"
-rm -rf $BACKUP_PATH 
+clean

@@ -1,5 +1,5 @@
-/var/log/gitbackup.log {
-  create 640 pi pi
+/var/log/banpi.log {
+  create 664 root banpi
   rotate 2
   monthly
   compress

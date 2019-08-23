@@ -1,9 +1,0 @@
-/var/log/giteabackupdrive.log {
-  create 640 git git
-  rotate 2
-  monthly
-  compress
-  missingok
-  notifempty
-}
- 
