@@ -1,0 +1,63 @@
+ apt-get autoremove
+ apt-get install apache2
+ apt-get install apt-file
+ apt-get install chromium-browser
+ apt-get install disk-manager
+ apt-get install filezilla
+ apt-get install fonts-piboto pimixer pipanel lxinput pi-greeter
+ apt-get install galculator
+ apt-get install git
+ apt-get install gnome-icon-theme
+ apt-get install gparted
+ apt-get install gtk2-engines-pixbuf gtk2-engines-clearlookspix
+ apt-get install gtk2-engines-pixflat lxplug-volume lxplug-bluetooth lxplug-ejecter lxplug-network lxplug-cputemp
+ apt-get install hardinfo
+ apt-get install iotop
+ apt-get install iperf
+ apt-get install iptraf
+ apt-get install leafpad
+ apt-get install lsof
+ apt-get install lxappearance
+ apt-get install lximage-qt
+ apt-get install lxmusic lxrandr
+ apt-get install lxmusic vlc
+ apt-get install lxplug-bluetooth
+ apt-get install lxshortcut
+ apt-get install lxtask
+ apt-get install lxterminal
+ apt-get install meld
+ apt-get install mtpaint
+ apt-get install --no-install-recommends lxqt-about
+ apt-get install --no-install-recommends lxqt-globalkeys
+ apt-get install --no-install-recommends lxqt-notificationd
+ apt-get install --no-install-recommends lxqt-runner
+ apt-get install --no-install-recommends raspberrypi-ui-mods
+ apt-get install --no-install-recommends smartmontools
+ apt-get install --no-install-recommends xinit
+ apt-get install --no-install-recommends xserver-xorg
+ apt-get install omxplayer piclone rp-prefapps rpi-chromium-mods
+ apt-get install pipanel
+ apt-get install pishutdown
+ apt-get install python-pip
+ apt-get install raspberrypi-artwork
+ apt-get install raspberrypi-ui-mods
+ apt-get install rc-gui
+ apt-get install remmina
+ apt-get install rpd-icons
+ apt-get install rpd-plym-splash rpd-icons rpd-wallpaper scrot point-rpi
+ apt-get install screen
+ apt-get install synaptic
+ apt-get install tree
+ apt-get install vim
+ apt-get install vsftpd
+ apt-get install wireshark
+ apt-get install x11vnc
+ apt-get install xarchiver
+ apt-get install xrdp
+ apt-get install xserver-xorg-legacy
+ apt-get install xterm
+ apt-get purge lightdm
+ apt-get purge pi-greeter
+ apt-get remove lxplug-bluetooth
+ apt-get remove rpd-plym-splash
+ apt-get upgrade
