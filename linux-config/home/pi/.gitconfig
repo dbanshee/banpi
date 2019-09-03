@@ -1,0 +1,17 @@
+[user]
+        email = pi@banpi
+        name = pi
+[core]
+        editor = vim
+[merge]
+        tool = meld
+[alias]
+        co = checkout
+        btree = log --graph --decorate --oneline
+        tree = log --graph --decorate --oneline --all
+        st = status
+        flog = log --follow -p -- i
+        rpull = pull --rebase
+[push]
+        default = simple
+

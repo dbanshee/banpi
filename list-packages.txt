@@ -3,6 +3,8 @@
  apt-get install apt-file
  apt-get install chromium-browser
  apt-get install disk-manager
+ apt-get install dovecot-common dovecot-imapd
+ apt-get install epdfview
  apt-get install filezilla
  apt-get install fonts-piboto pimixer pipanel lxinput pi-greeter
  apt-get install galculator
@@ -25,6 +27,8 @@
  apt-get install lxshortcut
  apt-get install lxtask
  apt-get install lxterminal
+ apt-get install mailutils
+ apt-get install mariadb-server
  apt-get install meld
  apt-get install mtpaint
  apt-get install --no-install-recommends lxqt-about
@@ -38,15 +42,18 @@
  apt-get install omxplayer piclone rp-prefapps rpi-chromium-mods
  apt-get install pipanel
  apt-get install pishutdown
+ apt-get install postfix
  apt-get install python-pip
  apt-get install raspberrypi-artwork
  apt-get install raspberrypi-ui-mods
  apt-get install rc-gui
  apt-get install remmina
+ apt-get install roundcube roundcube-plugins
  apt-get install rpd-icons
  apt-get install rpd-plym-splash rpd-icons rpd-wallpaper scrot point-rpi
  apt-get install screen
  apt-get install synaptic
+ apt-get install telnet
  apt-get install tree
  apt-get install vim
  apt-get install vsftpd
@@ -56,8 +63,11 @@
  apt-get install xrdp
  apt-get install xserver-xorg-legacy
  apt-get install xterm
+ apt-get purge exim4-base
  apt-get purge lightdm
+ apt-get purge mailutils
  apt-get purge pi-greeter
+ apt-get purge postfix
  apt-get remove lxplug-bluetooth
  apt-get remove rpd-plym-splash
  apt-get upgrade

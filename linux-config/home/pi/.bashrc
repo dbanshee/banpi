@@ -114,6 +114,8 @@ if ! shopt -oq posix; then
 fi
 
 export PATH=$PATH:/home/pi/scripts
+export MAIL=~/Maildir
+
 
 echo "
 ///////////////////////////////////////////
@@ -126,7 +128,7 @@ echo "
 
   Port Forward: SSH -> 9722:22  HTTP -> 9780:80  HTTPS -> 9743:443  VNC -> 9759:5900  RDP -> 9789:3389  FTP -> 9721:21
     
-  Web:   https://banpi.bansheerocks.com
+  Web:   https://banpi.bansheerocks.com/banpi.html
          https://banpi.bansheerocks.com/mail
          https://gitea.bansheerocks.com
 	 http://bodaclaunoel.cyberlove.us
